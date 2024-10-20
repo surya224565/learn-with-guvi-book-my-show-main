@@ -4,7 +4,7 @@
 
 async function fetchMovies() {
   try {
-    const response = await fetch("https://clone-bookmyshow.onrender.com/movie/6703d95f72875f399d5d1aa3");
+    const response = await fetch("https://clone-bookmyshow.onrender.com/movie/getmovies");
     const movies = await response.json();
     const movieCardsContainer = document.getElementById("movieCards");
     movieCardsContainer.innerHTML = "";
